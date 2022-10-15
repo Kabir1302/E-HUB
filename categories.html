@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Apple</title>
+    <style>
+        body{
+            overflow-x:hidden;
+        }
+        body{
+            width:100%;
+            margin:0;
+            padding:0;
+        }
+        header {
+            width: 100vw;
+        }
+
+        .header .header-1 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            padding: 0.7rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+        }
+
+        .header .header-1 .logo {
+            font-weight: bolder;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .header .header-1 .logo i {
+            color: white;
+        }
+
+        .header .header-1 .icons {
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .icons a {
+            color: white;
+        }
+
+        .icons a:hover {
+            color: blue;
+        }
+
+        .navbar {
+            background-color: red;
+            color: white;
+            font-size: 1.6rem;
+            padding: 0.6rem;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        .navbar a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+
+        .banner .banner-image {
+            width: 100%;
+            height: 28rem;
+            border: 0.5px solid black;
+        }
+
+        .dropdown {
+            display: inline-block;
+
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            padding: 12px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: table-column-group;
+            background-color: lightblue;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .dropdown-content a {
+            font-size: 1rem;
+            color: black;
+
+        }
+
+        .dropdown-content a:hover {
+            color: white;
+            background-color: gray;
+            border-radius: 0;
+        }
+
+        .img1 {
+            width: 100%;
+            height: 50rem;
+        }
+
+        .product-mac {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            cursor: pointer;
+        }
+
+        .product-mac h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            width: 1070px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .grid {
+            display: flex;
+            padding: 2rem;
+            margin: 2rem;
+            align-items: center;
+        }
+
+        .grid-product {
+            background: #f1f1f1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+        }
+
+        .grid-product:hover {
+            background: #e1e1e1;
+        }
+
+        .grid-product img {
+            width: 300px;
+        }
+
+        .grid-detail {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .grid-detail p:last-child {
+            transition: .5s;
+            margin-top: 10px;
+        }
+
+        .grid-product:hover>.grid-detail p:last-child {
+            color: #3498db;
+        }
+
+        .grid-full {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .grid-product-full {
+            background: #f1f1f1;
+            grid-column: span 3;
+            display: flex;
+            position: relative;
+        }
+
+        .grid-detail-sum {
+            position: absolute;
+            top: 35%;
+            right: 12%;
+            text-align: center;
+        }
+
+        .grid-detail-sum h2 {
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+        .grid-detail-sum p {
+            margin: 20px 0;
+        }
+
+        .grid-detail-sum a {
+            color: #3498db;
+        }
+
+        .grid-detail-sum a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function myFunction()
+        {
+            alert("WELCOME HERE !  BUY MACBOOK AIR AT BEST PRICE .");
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo" style="color:white"><i class="fas fa-tv"></i> E-Hub</a>
+            <div class="icons">
+                <a href="login.html" class="fas fa-user" target="_blank"></a>
+                <a class="fas fa-search"></a>
+                <a class="fas fa-shopping-cart"></a>
+                <a class="fas fa-heart"></a>
+                &nbsp
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="home.html" target="_blank">Home</a>
+
+            <div class="dropdown">
+                <a>Categories <i class="fas fa-angle-down" style="color:white;font-size:20px"></i></a>
+                <div class="dropdown-content">
+                    <a href="categories.html" target="_blank">MacBook</a><br>
+                    <a href="#">Referigerator</a><br>
+                    <a href="#">Washing Machines</a><br>
+                    <a href="#">AC</a><br>
+                    <a href="#">TV & Entertainment</a><br>
+                    <a href="#">Laptops & Printers</a>
+                </div>
+            </div>
+
+            <a href="#home">Track Order</a>
+            <a href="about.html" target="_blank">About Us</a>
+            <a href="contact.html" target="_blank">Contact Us</a>
+        </div>
+    </header>
+    <div class="img">
+        <img src="images/bgapple.jpg" class="img1" alt="">
+    </div>
+    <center>
+        <div class="container">
+            <h2>Mac</h2>
+            <div class="grid">
+                <div class="grid-product">
+                    <img
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916082" onmouseover="myFunction()">
+                    <div class="grid-detail">
+                        <p>MacBook Air</p>
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <img
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-pro-segment-2019?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1573580916135">
+                    <div class="grid-detail">
+                        <p>MacBook Pro</p>
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <img
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1570232081431">
+                    <div class="grid-detail">
+                        <p>iMac</p>
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <img
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/imac-pro-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1570231926191">
+                    <div class="grid-detail">
+                        <p>iMac Pro</p>
+
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <img
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-pro-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1524766968633">
+                    <div class="grid-detail">
+                        <p>Mac Pro</p>
+
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <img
+                        src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mac-mini-segment?wid=800&hei=600&fmt=png-alpha&qlt=80&.v=1539466285370">
+                    <div class="grid-detail">
+                        <p>Mac mini</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </center>
+    
+</body>
+
+</html>

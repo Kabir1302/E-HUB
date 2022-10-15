@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        .heading{
+            color:red;
+            text-align:center;
+            font-size: 1.4rem;
+            font-style:italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: aliceblue;
+            text-decoration: underline;
+        }
+        .feedback{
+            border:2px solid brown;
+        }
+        .form{
+            justify-content: center;
+        }
+        .button{
+            border:1px solid red;
+            color:red;
+        }
+        button:hover{
+            color:white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+   <fieldset style="border-radius:20px;width:40rem;height:18rem;background-color:beige" class="feedback">
+      <legend class="heading"> Customer Feedback Form </legend>
+      <br>
+      <form action="" class="form">
+        Enter Your Name :
+        <input type="text" placeholder="Name" style="border:1px solid black" required ><br><br>
+        Enter Your E-mail :
+        <input type="email" placeholder="E-mail" required><br><br>
+        Enter Your Age : 
+        <input type="number" placeholder="Your Age" required><br><br>
+        Gender : 
+        <input type="radio" name="Male" id="" checked>Male
+        <input type="radio" name="Female" id="">Female
+        <input type="radio" name="other" id="">Other
+        <br><br>
+        Any Comments :   
+        <textarea name="" id="" cols="25" rows="2" placeholder="Give Your Suggestions"></textarea><br><br>
+        <center>
+            <button type="submit" class="button">Submit</button><br><br>
+        </center>
+     
+      </form>
+      
+   </fieldset>
+   </center>
+</body>
+</html>

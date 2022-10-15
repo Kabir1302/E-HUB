@@ -1,0 +1,472 @@
+
+
+body{
+    background-color:white;
+    text-decoration: none;
+    overflow-x:hidden;
+    margin:0;padding:0;
+    text-decoration: none;
+}
+header{
+    width:100vw;
+}
+
+.header .header-1{
+    display:flex;
+    align-items: center;
+    text-align:center;
+    justify-content: space-between;
+    padding:0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+.header .header-1 .logo {
+    font-weight:bolder;
+    font-size:1.4rem;
+    text-decoration: none;
+}
+
+.header .header-1 .logo i{
+    color:white;
+}
+
+.header .header-1 .icons{
+    font-size:1.4rem;
+    text-decoration: none;
+}
+
+.icons a{
+    color:white;
+}
+
+.icons a:hover{
+    color:blue;
+}
+
+.navbar{
+    
+    color:black;
+    font-size:1.6rem;
+    padding:0.6rem;
+    margin:auto;
+    text-align:center;
+    width:100%;
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    color:black;
+    padding:0.5rem;
+}
+
+.navbar a:hover{
+    color:white;
+    background-color: black;
+    border-radius:20px;
+}
+
+
+.banner .banner-image{
+    width:100%;
+    height:25rem;
+    border:0.5px solid black;
+}
+
+.dropdown{
+    display:inline-block;
+    
+}
+
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    z-index:1;
+    padding:12px;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display:table-column-group;
+    background-color:lightblue;
+    color:black;
+    font-weight:bolder;
+}
+
+.dropdown-content a{
+    font-size:1rem;
+    color:black;
+
+}
+
+.dropdown-content a:hover{
+    color:white;
+    background-color: gray;
+    border-radius:0;
+}
+
+.flex{
+    display:flex;
+    width:100%;
+    height:25rem;
+    padding:2.1rem;
+    background-color:white;
+}
+
+.first{
+    float:left;
+    width:16rem;height:22rem;
+    background-color: #fff;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    margin-left:20px;
+    
+}
+.first:hover{
+    box-shadow: 0 1rem 1.2em  black;
+}
+.second{
+    float:left;
+    width:16rem;
+    height:22rem;
+    background-color: #fff;
+    margin-left:22px;
+    margin-right:22px;
+    border-right:2px solid black;
+    
+}
+.second:hover{
+    box-shadow: 0 1rem 1.2em black;
+}
+.third{
+    background-color:white;
+    float:left;
+    width:16rem;
+    height:22rem;
+    border-right:2px solid black;
+    
+}
+.third:hover{
+    box-shadow: 0 1rem 1.2em black;
+}
+.fourth{
+    float:left;
+    width:16.6rem;
+    height:22rem;
+    background-color: #fff;
+    margin-left:22px;
+    margin-right:22px;
+    border-right:2px solid black;
+}
+.fourth:hover{
+    box-shadow: 0 1rem 1.2em black;
+}
+.button-flex{
+    color:gray;
+    background-color:white;
+    font-size:1rem;
+}
+
+.button-flex:hover{
+    color:black;
+    border:1px solid red;
+    background-color:lightgray;
+}
+.banner-1 img{
+    width:100%;
+    height:15rem;
+}
+
+.brands{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width:100%;
+    
+    padding:1rem;
+    padding-top: 2rem;
+}
+
+.brand1{
+    float:left;
+    width:7rem;height:7rem;
+    background-color: #fff;
+    border-radius:30px;
+    
+}
+.brand1:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+.brand2{
+    float:left;
+    width:7rem;
+    height:7rem;
+    background-color: #fff;
+    margin-left:21px;
+    margin-right:21px;
+    border-radius: 30px;
+}
+.brand2:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+.brand3{
+    background-color:white;
+    float:left;
+    width:7rem;
+    height:7rem;
+    border-radius:20px;
+}
+.brand3:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+.brand4{
+    float:left;
+    width:7rem;
+    height:7rem;
+    background-color: #fff;
+    margin-left:20px;
+    margin-right:22px;
+    border-radius:20px;
+}
+.brand4:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+
+.brand5{
+    float:left;
+    width:7rem;
+    height:7rem;
+    background-color: #fff;
+    margin-right:22px;
+    border-radius:20px;
+}
+.brand5:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+
+.brand6{
+    background-color:white;
+    float:left;
+    width:7rem;
+    height:7rem;
+    border-radius:20px ;
+}
+.brand6:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+.brand7{
+    float:left;
+    width:7rem;
+    height:7rem;
+    background-color: #fff;
+    margin-left:21px;
+    margin-right:21px;
+    border-radius:20px;
+}
+.brand7:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+
+.brand8{
+    float:right;
+    width:7rem;
+    height:7rem;
+    background-color: #fff;
+    margin-right:21px;
+    border-radius:20px ;
+}
+.brand8:hover{
+    box-shadow: 0 0rem 1.5em gray;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100%;
+    height:18rem;
+    margin-bottom:0;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color:red;
+}
+
+.phone-section {
+    
+    width:100vw;
+    padding-top:0;
+    margin-top:0;
+    display: flex;
+
+}
+
+.phone-section .phone-image{
+    border:3px solid black;
+    background-image: black;
+    width:58vw;
+    margin:0;
+}
+
+ .phone-flex{
+    display:flex;
+    flex-wrap: wrap;
+    padding:2rem;
+    padding-top:1rem;
+    margin:1rem;
+    margin-right:0rem;
+}
+
+.phone-section .phone-flex .phone1{
+    border:2px solid black;
+    width:14.2vw;
+    height:20vw;
+    margin-right:1rem;
+    background-color: #fff;
+    padding:0.5rem;
+}
+.phone-section .phone-flex .phone1:hover{
+    border:3px solid;
+    box-shadow: 0.5rem 1rem 1.2em black;
+    
+}
+.phone-section .phone-flex .phone2{
+    border:2px solid black;
+    width:15vw;
+    height:20vw;
+    margin-right:1rem;
+    background-color: #fff;
+    padding:0.5rem;
+}
+.phone-section .phone-flex .phone2:hover{
+    border:3px solid;
+    box-shadow: 0.5rem 1rem 1.2em black;
+    
+}
+.phone-section .phone-flex .phone3{
+    border:2px solid black;
+    width:15vw;
+    height:20vw;
+    margin-right:1rem;
+    background-color: #fff;
+    padding:0.5rem;
+}
+.phone-section .phone-flex .phone3:hover{
+    border:3px solid;
+    box-shadow: 0.5rem 1rem 1.2em black;
+    
+}
+.phone-section .phone-flex .phone4{
+    border:2px solid black;
+    width:13vw;
+    height:20vw;
+    padding:1rem;
+        margin-top:1rem;
+    background-color: #fff;
+    
+}
+.phone-section .phone-flex .phone4:hover{
+    border:3px solid;
+    box-shadow: 0.5rem 1rem 1.2em black;
+    
+}
+.phone-section .phone-flex .phone5{
+    border:2px solid black;
+    width:14vw;
+    height:20vw;
+    padding:1rem;
+    margin-left:1rem;
+    margin-top:1rem;
+    background-color: #fff;
+    
+}
+.phone-section .phone-flex .phone5:hover{
+    border:3px solid;
+    box-shadow: 0.5rem 1rem 1.2em black;
+    
+}
+.phone-section .phone-flex .phone6{
+    border:2px solid black;
+    width:14vw;
+    height:20vw;
+    margin-right:1rem;
+    margin-left:1rem;
+    margin-top:1rem;
+    background-color: #fff;
+    padding:1rem;
+}
+.phone-section .phone-flex .phone6:hover{
+    border:3px solid;
+    box-shadow: 0.5rem 1rem 1.2em black;
+    
+}
+.phone-section .phone-flex .phone-content{
+    text-align:center;
+}
+.btn-phone{
+    margin-left:50%;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        .div1 {
+            width: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            width: 100vw;
+        }
+
+        .header .header-1 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            padding: 0.7rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+        }
+
+        .header .header-1 .logo {
+            font-weight: bolder;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .header .header-1 .logo i {
+            color: white;
+        }
+
+        .header .header-1 .icons {
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .icons a {
+            color: white;
+        }
+
+        .icons a:hover {
+            color: blue;
+        }
+
+        .navbar {
+            background-color: red;
+            color: white;
+            font-size: 1.6rem;
+            padding: 0.6rem;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        .navbar a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+
+        .banner .banner-image {
+            width: 100%;
+            height: 28rem;
+            border: 0.5px solid black;
+        }
+
+        .dropdown {
+            display: inline-block;
+
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            padding: 12px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: table-column-group;
+            background-color: lightblue;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .dropdown-content a {
+            font-size: 1rem;
+            color: black;
+
+        }
+
+        .dropdown-content a:hover {
+            color: white;
+            background-color: gray;
+            border-radius: 0;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+
+        .title {
+            color: grey;
+        }
+
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: black;
+            height: 10rem;
+            width: 100%;
+            height: 18rem;
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-content p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            color: #cacdd2;
+        }
+
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+
+        .socials li {
+            margin: 0 10px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .socials a i {
+            font-size: 1.1rem;
+            width: 20px;
+            transition: color .4s ease;
+        }
+
+        .socials a:hover i {
+            color: red;
+        }
+
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo" style="color:white"><i class="fas fa-tv"></i> E-Hub</a>
+            <div class="icons">
+                <a href="login.html" class="fas fa-user" target="_blank"></a>
+                <a class="fas fa-search"></a>
+                <a class="fas fa-shopping-cart"></a>
+                <a class="fas fa-heart"></a>
+                &nbsp
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="home.html" target="_blank">Home</a>
+
+            <div class="dropdown">
+                <a>Categories <i class="fas fa-angle-down" style="color:white;font-size:20px"></i></a>
+                <div class="dropdown-content">
+                    <a href="categories.html" target="_blank">MacBook</a><br>
+                    <a href="#">Referigerator</a><br>
+                    <a href="#">Washing Machines</a><br>
+                    <a href="#">AC</a><br>
+                    <a href="#">TV & Entertainment</a><br>
+                    <a href="#">Laptops & Printers</a>
+                </div>
+            </div>
+
+            <a href="#home">Track Order</a>
+            <a href="about.html" target="_blank">About Us</a>
+            <a href="contact.html" target="_blank">Contact Us</a>
+        </div>
+    </header>
+    <div class="about-section">
+        <h1>E-HUB</h1>
+        <p>E-Hub is India's large format specialist electronics retail store. Founded in 2008, E-Hub brings under
+            one roof, multi-brand digital gadgets and home electronics products.</p>
+        <p>Whether you’re setting up a new home or looking to upgrade, our range of appliances from Samsung, LG,
+            Whirlpool, Godrej, and IFB among others will ensure you go home with the best appliance from the best
+            brands.</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <hr>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="images/av3.png" alt="Jane" style="width:100%">
+                <div class="container">
+                    <h2>Angelina</h2>
+                    <p class="title" id="demo">CEO & Founder</p>
+                    <button class="button" onclick="myFunction()" >Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="images/av1.png" alt="Mike" style="width:100%">
+                <div class="container">
+                    <h2>Jolly</h2>
+                    <p class="title">Engineer</p>
+                    <button class="button">Contact</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="images/av2.png" alt="John" style="width:100%">
+                <div class="container">
+                    <h2>John</h2>
+                    <p class="title">Designer</p>
+                    <button class="button">Contact</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="footer-content">
+            <h3>E-Hub</h3>
+            <p>INDIA'S LARGEST ONLINE ELECTRONICS PLATFORM
+            </p>
+        </div>
+        <div class="social">
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands  fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands  fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com/maps/place/gada+electronics/@28.9080618,75.6039611,15z/data=!4m5!3m4!1s0x0:0x57a83ad227d29df5!8m2!3d28.9080597!4d75.6039683"
+                        target="_blank"><i class="fa fa-location-dot"></i></a></li>
+                <li><a href="https://youtu.be/3N5hNbFY5hY" target="_blank"><i class="fab fa-youtube"></i></a></li>
+
+                <br>
+            </ul>
+
+        </div>
+    </footer>
+    <script>
+        function myFunction()
+        {
+            let email=prompt("Enter your E-mail Id Below");
+
+            if(email != null)
+            {
+                document.getElementById("demo").innerHTML="Email you entered is "+ email +" . we contact you soon.";
+            }
+        }
+    </script>
+</body>
+
+</html>

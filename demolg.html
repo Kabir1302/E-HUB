@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DEMO </title>
+    <style>
+        body {
+            background-color: white;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            width: 100vw;
+        }
+
+        .header .header-1 {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+            padding: 0.7rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: black;
+        }
+
+        .header .header-1 .logo {
+            font-weight: bolder;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .header .header-1 .logo i {
+            color: white;
+        }
+
+        .header .header-1 .icons {
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+
+        .icons a {
+            color: white;
+        }
+
+        .icons a:hover {
+            color: blue;
+        }
+
+        .navbar {
+            background-color: red;
+            color: white;
+            font-size: 1.6rem;
+            padding: 0.6rem;
+            margin: auto;
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        .navbar a:hover {
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+
+
+        .banner {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 29rem;
+            border: 0.5px solid black;
+        }
+
+        .dropdown {
+            display: inline-block;
+
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            padding: 12px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: table-column-group;
+            background-color: lightblue;
+            color: black;
+            font-weight: bolder;
+        }
+
+        .dropdown-content a {
+            font-size: 1rem;
+            color: black;
+
+        }
+
+        .dropdown-content a:hover {
+            color: white;
+            background-color: gray;
+            border-radius: 0;
+        }
+
+        .video-section {
+            margin-left: 2rem;
+            padding-left: 1.5rem;
+            width: 55rem;
+            text-align: center;
+            margin-right:1rem;
+            padding-right:1rem;
+
+        }
+
+        .middle {
+            display: flex;
+        }
+
+        .video:hover {
+            border: 2px solid red;
+        }
+
+        .btn1 {
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .content {
+            
+            width: 40rem;
+        }
+
+        .sec-section {
+            display: flex;
+        }
+
+        .sec-section .return {
+            width: 20rem;
+            
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: black;
+            height: auto;
+            width: 100%;
+            height: 18rem;
+            margin-bottom: 0;
+            color: #fff;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-content p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            color: #cacdd2;
+        }
+
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+
+        .socials li {
+            margin: 0 10px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .socials a i {
+            font-size: 1.1rem;
+            width: 20px;
+            transition: color .4s ease;
+        }
+
+        .socials a:hover i {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-1">
+            <a href="#" class="logo"><i class="fas fa-tv"></i> E-Hub</a>
+            <div class="icons">
+                <a href="signup.html" class="fas fa-user" target="_blank"></a>
+                <a class="fas fa-search"></a>
+                <a class="fas fa-shopping-cart"></a>
+                <a class="fas fa-heart"></a>
+                &nbsp
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="home.html">Home</a>
+
+            <div class="dropdown">
+                <a>Categories <i class="fas fa-angle-down" style="color:white;font-size:20px"></i></a>
+                <div class="dropdown-content">
+                    <a href="categories.html" target="_blank">Macbook</a><br>
+                    <a href="#">Referigerator</a><br>
+                    <a href="#">Washing Machines</a><br>
+                    <a href="#">AC</a><br>
+                    <a href="#">Mobiles & Tablets</a><br>
+                    <a href="#">Laptops & Printers</a>
+                </div>
+            </div>
+
+            <a href="#home">Track Order</a>
+            <a href="#home">About Us</a>
+            <a href="contact.html" target="_blank">Contact Us</a>
+        </div>
+    </header>
+    <div class="middle">
+        <div class="video-section">
+            <br>
+
+            <iframe class="video" alt="video not available" width="1067" height="600" src="https://www.youtube.com/embed/s7E8rzmb1Ak"
+                title="Watch To Know More" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe><br>
+            <h1>LG SMART REFERIGERATOR</h1>
+            <a title="click to know more "
+                href="https://www.lg.com/us/refrigerators/lg-lrmws2906d-french-4-door-refrigerator"
+                target="_blank"><button class="btn1" style="color:black;background-color: gray;">Read More</button></a>
+            <br><br>
+
+        </div>
+        <div class="content">
+
+            <h1 style="font-size:2rem;padding-top:3rem;text-align:center">LG 674 Litre Side-By-side Referigrator</h1>
+            <hr>
+            <center>
+                <div class="text">
+                    Deal Price : Rs. 98,500 /-<br>
+                    MRP. : Rs. 1,12,999/-<br>
+                    You Save : 20%;<br>
+                    EMI from Rs. 8209/Month|<a style="color:blue;cursor:pointer">View Plans</a><br>
+                    <b>FREE SHIPPING</b><br><br>
+                    <input type="number" placeholder="PIN CODE" maxlength="6"><br><br>
+
+                    <button type="button"
+                        style="font-size:1.8rem;background-color:red;color:white;border:none;border-radius:4px">ADD TO
+                        CART</button> &nbsp
+                    <button type="button"
+                        style="font-size:1.8rem;background-color:red;color:white;border:none;border-radius:4px">BUY
+                        NOW</button>
+
+                    <hr><br>
+            </center>
+            <div class="sec-section">
+                <div class="key" style="padding:1rem;width:15rem;border-right:1px solid black">
+                    Key Feautres
+
+                    <ul>
+
+                        <li>Inverter Linear Compressor</li>
+                        <li>ThinQ</li>
+                        <li>Door Cooling</li>
+                        <li>Hygiene Fresh</li>
+
+                    </ul>
+                </div>
+                <div class="return">
+                    <ul style="list-style-type:none">
+                        <li>7 Days Return policy*</li>
+                        <li><b>Warranty :</b> 1 Year manufacturer warranty</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>E-Hub</h3>
+            <p>E-Hub is India's large format specialist electronics retail store. Founded in 2008, E-Hub brings under
+                one roof, multi-brand digital gadgets and home electronics products.
+                Whether you’re setting up a new home or looking to upgrade, our range of appliances from Samsung, LG,
+                Whirlpool, Godrej, and IFB among others will ensure you go home with the best appliance from the best
+                brands.
+            </p>
+        </div>
+        <div class="social">
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands  fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands  fa-twitter"></i></a></li>
+                <li><a href="https://www.google.com/maps/place/gada+electronics/@28.9080618,75.6039611,15z/data=!4m5!3m4!1s0x0:0x57a83ad227d29df5!8m2!3d28.9080597!4d75.6039683"
+                        target="_blank"><i class="fa fa-location-dot"></i></a></li>
+                <li><a href="https://youtu.be/3N5hNbFY5hY" target="_blank"><i class="fab fa-youtube"></i></a></li>
+
+                <br>
+            </ul>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
